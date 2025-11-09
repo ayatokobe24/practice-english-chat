@@ -2,6 +2,22 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+### Supabaseのセットアップ
+
+1. Supabaseプロジェクトを作成（https://supabase.com）
+2. プロジェクトルートに`.env.local`ファイルを作成し、以下の環境変数を設定：
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your-project-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+```
+
+環境変数は、Supabaseダッシュボードの **Project Settings > API** から取得できます。
+
+3. データベーススキーマの作成（DB設計書に基づいてテーブルを作成）
+
+### 開発サーバーの起動
+
 First, run the development server:
 
 ```bash
